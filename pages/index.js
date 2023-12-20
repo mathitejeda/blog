@@ -9,20 +9,17 @@ export default function Home() {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt=""
-            />
-            <h2 className={utilStyles.headingLg}>
-                Mathias Tejeda
-            </h2>
-
-            <section className={utilStyles.headingMd}>
-                <p>Hola, soy mathi! Actualmente estudio Tecnicatura Universitaria en programación en la UTN Facultad regional General Pacheco. Mi objetivo es adquirir nuevas habilidades y poder desarrollar las que ya poseo para poder crecer como programador. Me gusta aprender y conocer nuevas herramientas que me ayuden a cumplir ese objetivo. Me gusta ver series, Peliculas, leer libros o manga y jugar videojuegos. Disfruto mucho programando, especialmente todo lo relacionado a la lógica y todos los desafios que esto trae. También me gusta probar sistemas operativos basados en linux, mis distribuciones favoritas son ubuntu y fedora. </p>
+            <section className={`${utilStyles.headingMd} ${utilStyles.presentation}`}>
+                <Image
+                    priority
+                    src="/images/profile.jpg"
+                    className={utilStyles.borderCircle}
+                    height={128}
+                    width={128}
+                    alt=""
+                />
+                <h2 className={utilStyles.headingLg}>Hi, I'm Mathi!</h2>
+        <p>I have successfully completed a Technical University Degree in Programming at UTN, General Pacheco Regional Faculty. My aim is to continually acquire new skills and enhance my existing ones to foster growth as a programmer. Linux poweruser wanna-be and smash bros amateur (little mac btw).</p>
             </section>
         </Layout>
     );
